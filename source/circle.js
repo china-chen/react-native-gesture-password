@@ -1,5 +1,5 @@
 import React from 'react'
-import {StyleSheet, View} from 'react-native'
+import {StyleSheet, View, PixelRatio} from 'react-native'
 import PropTypes from 'prop-types';
 
 export default class Circle extends React.Component {
@@ -18,8 +18,8 @@ export default class Circle extends React.Component {
           height: 2 * r,
           borderRadius: r,
           backgroundColor: '#ffffff'
-        }, {borderColor: normalColor},
-        fill && {borderColor: color},
+        }, {borderColor: normalColor, borderWidth: 1/PixelRatio.get()},
+        fill && {borderColor: color, borderWidth: 1/PixelRatio.get()},
         !outer && {borderWidth: 0}]}>
 
         {inner && <View style={[
