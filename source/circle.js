@@ -18,8 +18,8 @@ export default class Circle extends React.Component {
           height: 2 * r,
           borderRadius: r,
           backgroundColor: '#ffffff'
-        }, {borderColor: normalColor, borderWidth: 1/PixelRatio.get()},
-        fill && {borderColor: color, borderWidth: 1/PixelRatio.get()},
+        }, {borderColor: normalColor, borderWidth: 1},
+        fill && {borderColor: color, borderWidth: 1},
         !outer && {borderWidth: 0}]}>
 
         {inner && <View style={[

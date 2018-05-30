@@ -1,7 +1,7 @@
 export function isPointInCircle(point, center, radius) {
   let d = getDistance(point, center);
 
-  return d <= radius;
+  return d <= radius * 1.5;
 }
 
 export function getDistance(pt1, pt2) {
